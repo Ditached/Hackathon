@@ -224,7 +224,7 @@ MonoBehaviour:
   - fullName: NWH.VehiclePhysics2.Steering
     isEnabled: 1
     initialized: 0
-    lodIndex: -1
+    lodIndex: 1
   LODs:
   - {fileID: 11400000, guid: bbb1e1ce24d085d449fd467c6b98027c, type: 2}
   - {fileID: 11400000, guid: 24c4d05d4c3c3c7498c50432e96397b6, type: 2}

@@ -48,7 +48,7 @@ MonoBehaviour:
   - fullName: NWH.VehiclePhysics2.Input.VehicleInputHandler
     isEnabled: 0
     initialized: 0
-    lodIndex: -1
+    lodIndex: 2
   - fullName: NWH.VehiclePhysics2.Modules.ABS.ABSModule
     isEnabled: 0
     initialized: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
   - fullName: NWH.VehiclePhysics2.Powertrain.Powertrain
     isEnabled: 0
     initialized: 0
-    lodIndex: -1
+    lodIndex: 1
   - fullName: NWH.VehiclePhysics2.Powertrain.TransmissionComponent
     isEnabled: 0
     initialized: 0

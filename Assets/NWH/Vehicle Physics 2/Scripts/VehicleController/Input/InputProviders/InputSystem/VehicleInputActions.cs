@@ -327,6 +327,17 @@ namespace NWH.VehiclePhysics2.Input
                 },
                 {
                     ""name"": """",
+                    ""id"": ""3f4ca68c-fe51-4cd2-8cc4-7a003475f322"",
+                    ""path"": ""<HID::HJC PS4 GAMEPAD>/button5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ShiftUp"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""6c4a4e7e-d035-447e-aaae-a5fb5f586cce"",
                     ""path"": ""<Keyboard>/f"",
                     ""interactions"": """",
@@ -349,6 +360,17 @@ namespace NWH.VehiclePhysics2.Input
                 },
                 {
                     ""name"": """",
+                    ""id"": ""a0a43cf0-91f7-45b4-af46-1067bed12bc3"",
+                    ""path"": ""<HID::HJC PS4 GAMEPAD>/button6"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ShiftDown"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""c80687f6-73d6-4d12-a7ec-bfd5f70b9c1f"",
                     ""path"": ""<Keyboard>/z"",
                     ""interactions"": """",
@@ -360,8 +382,30 @@ namespace NWH.VehiclePhysics2.Input
                 },
                 {
                     ""name"": """",
+                    ""id"": ""896f8f26-0fec-42f2-bbe1-bdd473b016e8"",
+                    ""path"": ""<HID::HJC PS4 GAMEPAD>/button11"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LeftBlinker"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""685cee63-e7f3-4a07-a8e3-bf34b04f0b47"",
                     ""path"": ""<Keyboard>/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RightBlinker"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7b5f18c5-f751-40ac-af27-5c0ec8a72504"",
+                    ""path"": ""<HID::HJC PS4 GAMEPAD>/button12"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -678,6 +722,17 @@ namespace NWH.VehiclePhysics2.Input
                     ""isPartOfComposite"": true
                 },
                 {
+                    ""name"": """",
+                    ""id"": ""9c61ce77-62a4-4939-ad9e-b05a12c5cbb9"",
+                    ""path"": ""<Joystick>/stick/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Steering"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
                     ""name"": ""Keyboard"",
                     ""id"": ""866afad4-aa6f-444a-8122-260b6292b1d2"",
                     ""path"": ""1DAxis"",
@@ -766,6 +821,17 @@ namespace NWH.VehiclePhysics2.Input
                     ""isPartOfComposite"": true
                 },
                 {
+                    ""name"": """",
+                    ""id"": ""fd5d1dbc-db7f-49dd-b4c6-04989991fbd1"",
+                    ""path"": ""<HID::HJC PS4 GAMEPAD>/button2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Throttle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
                     ""name"": ""Keyboard"",
                     ""id"": ""079d6648-edd9-46d8-ae9b-ab8fced71ba4"",
                     ""path"": ""1DAxis"",
@@ -808,6 +874,17 @@ namespace NWH.VehiclePhysics2.Input
                     ""action"": ""Brakes"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""24900690-fc9f-4115-abf1-910896c08d53"",
+                    ""path"": ""<HID::HJC PS4 GAMEPAD>/trigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Brakes"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }

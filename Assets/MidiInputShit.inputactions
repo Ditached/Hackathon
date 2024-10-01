@@ -1,0 +1,360 @@
+{
+    "name": "MidiInputShit",
+    "maps": [
+        {
+            "name": "Main",
+            "id": "a94ba049-cfc6-4968-b84e-174aca54b7cf",
+            "actions": [
+                {
+                    "name": "Slider_77",
+                    "type": "Value",
+                    "id": "5b73e151-fd11-4bfb-9678-f42c1b2a4936",
+                    "expectedControlType": "MidiValue",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Slider_78",
+                    "type": "Value",
+                    "id": "f592f678-b0ce-4e54-9d1d-dd1e88fda7be",
+                    "expectedControlType": "MidiValue",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Slider_79",
+                    "type": "Value",
+                    "id": "9cd57f9c-3677-4bcd-a2ee-3ac58ed9f1fa",
+                    "expectedControlType": "MidiValue",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Slider_80",
+                    "type": "Value",
+                    "id": "8d4e21ed-c8fb-4eeb-95ca-b4c0784a1c5f",
+                    "expectedControlType": "MidiValue",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Slider_81",
+                    "type": "Value",
+                    "id": "a1b39ebd-84f3-42a3-8471-f940b477b0c6",
+                    "expectedControlType": "MidiValue",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Slider_82",
+                    "type": "Value",
+                    "id": "d47b2dd5-2e42-4156-9e4e-3856e7a7c347",
+                    "expectedControlType": "MidiValue",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Slider_83",
+                    "type": "Value",
+                    "id": "ccd55145-e92c-4b6e-ae07-ca194b3c15e8",
+                    "expectedControlType": "MidiValue",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Slider_84",
+                    "type": "Value",
+                    "id": "7a6f5461-bd3d-4c12-a007-381e671ecd15",
+                    "expectedControlType": "MidiValue",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Button_1",
+                    "type": "Button",
+                    "id": "8c942819-c656-472e-9e9a-e74c2df86338",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Button_2",
+                    "type": "Button",
+                    "id": "b61f8e45-97ec-4911-b984-41de6690d6aa",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Button_3",
+                    "type": "Button",
+                    "id": "aab9ef3b-16bb-498b-bdcd-5d7583821281",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Button_4",
+                    "type": "Button",
+                    "id": "69a94c03-1380-43ef-b1e6-17248de1dfb1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Button_5",
+                    "type": "Button",
+                    "id": "bde99383-45a6-4e23-aadc-6c395889ba82",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Button_6",
+                    "type": "Button",
+                    "id": "b0f1a5df-6089-41fb-a52b-738d81f720a2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Button_7",
+                    "type": "Button",
+                    "id": "44a26da3-646d-4099-9dd8-803c967df8b3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Button_8",
+                    "type": "Button",
+                    "id": "e878ae18-a0ed-439f-8a4b-b3e8fc024d45",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RightTurntable",
+                    "type": "Value",
+                    "id": "12f64742-1a36-40c8-af3d-a72e98cffa16",
+                    "expectedControlType": "MidiValue",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "20dcd009-4450-479c-a774-3792a52d38ed",
+                    "path": "<MidiDevice>/control077",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Main",
+                    "action": "Slider_77",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c234c57b-447e-4c35-9e25-741a51536717",
+                    "path": "<MidiDevice>/control078",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Main",
+                    "action": "Slider_78",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5389f65c-f219-4375-88f9-4f8b7d3ae4d4",
+                    "path": "<MidiDevice>/control079",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Main",
+                    "action": "Slider_79",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3660bfcc-4cd5-481f-9858-388388a1e78e",
+                    "path": "<MidiDevice>/control080",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Main",
+                    "action": "Slider_80",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2b7d8926-5c08-4116-a42b-4b26443f9c2d",
+                    "path": "<MidiDevice>/control081",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Main",
+                    "action": "Slider_81",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "38076ebf-7430-4d95-a048-2e6eb1bf7f4b",
+                    "path": "<MidiDevice>/control082",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Main",
+                    "action": "Slider_82",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "28490684-a85e-481f-a965-455440b036b8",
+                    "path": "<MidiDevice>/control083",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Main",
+                    "action": "Slider_83",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8de26d19-7fda-452e-9346-b32555bb1e3e",
+                    "path": "<MidiDevice>/control084",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Main",
+                    "action": "Slider_84",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "979d530c-d925-4929-b3c2-4184e2e2ca56",
+                    "path": "<MidiDevice>/note073",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Main",
+                    "action": "Button_1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8d2ce75f-04ea-410d-8f39-eb656ded6edd",
+                    "path": "<MidiDevice>/note074",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Main",
+                    "action": "Button_2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "99b430f5-4a0a-43ae-a80d-23b9d1419869",
+                    "path": "<MidiDevice>/note075",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Main",
+                    "action": "Button_3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ae73324e-a4f8-4803-939a-436c51d592d9",
+                    "path": "<MidiDevice>/note076",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Main",
+                    "action": "Button_4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9bc9d6ad-15fb-442a-9f05-11e05e84a37f",
+                    "path": "<MidiDevice>/note089",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Main",
+                    "action": "Button_5",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "83be0741-9ca0-4ff5-af45-db381913a539",
+                    "path": "<MidiDevice>/note090",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Main",
+                    "action": "Button_6",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "18cd027d-e14f-4284-8888-8d0358cf9469",
+                    "path": "<MidiDevice>/note091",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Main",
+                    "action": "Button_7",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6430f84c-32ef-4219-8b63-9b9b52a7d255",
+                    "path": "<MidiDevice>/note092",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Main",
+                    "action": "Button_8",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c7285487-2671-449e-9c9e-45d3493e0f23",
+                    "path": "<MidiDevice>/control010",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Main",
+                    "action": "RightTurntable",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Main",
+            "bindingGroup": "Main",
+            "devices": []
+        }
+    ]
+}

@@ -34,5 +34,10 @@ public class VehicleResetter : MonoBehaviour
         car.transform.position = startPosition;
         car.transform.rotation = startRotation;
         
+        foreach (var ampel in FindObjectsOfType<Ampel>())
+        {
+            ampel.ResetAmpel();
+        }
+        
     }
 }

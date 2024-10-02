@@ -183,4 +183,15 @@ public class Ampel : MonoBehaviour
         FindObjectOfType<MusicController>().currentSpeedLimit = targetVelocityAfter;
         SetToRed();
     }
+
+    public void ResetAmpel()
+    {
+        TrackingActive = false;
+        timeStayedInTargetVelocity = 0f;
+        switchFlag = false;
+        enterFlag = false;
+        tooLate = false;
+        SetToRed();
+        FindObjectOfType<MusicController>().currentSpeedLimit = 50f;
+    }
 }

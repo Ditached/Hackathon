@@ -207,5 +207,10 @@ public class MusicController : MonoBehaviour
 
         blinkerLeft.volume = Mathf.Lerp(blinkerLeft.volume, blinkerLeftVolume, Time.deltaTime * fadeSpeed);
         blinkerRight.volume = Mathf.Lerp(blinkerRight.volume, blinkerRightVolume, Time.deltaTime * fadeSpeed);
+
+        if (!vehicleController.brakes.IsBraking)
+        {
+            vehicleController.brakes.brakeOffThrottleIntensity = 0.3f;
+        }
     }
 }

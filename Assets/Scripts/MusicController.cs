@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using NWH.Common.Vehicles;
 using NWH.VehiclePhysics2;
 using NWH.VehiclePhysics2.Sound.SoundComponents;
+using Shapes;
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
@@ -27,6 +28,11 @@ public class MusicLayer
 
 public class MusicController : MonoBehaviour
 {
+    public Rectangle leftRect;
+    public Rectangle rightRect;
+    public Disc goldenZoneDisc;
+    public float goldenZoneLerpSpeed = 2f;
+    public Disc speedDisc;
     public List<MusicLayer> musicLayers;
 
     [Title("General")] public Rigidbody rb;
@@ -118,6 +124,14 @@ public class MusicController : MonoBehaviour
         }
         
         currentSpeed = vehicleController.Speed * 3.6f;
+        speedDisc.AngRadiansEnd = currentSpeed * Mathf.Deg2Rad;
+        
+        
+        var angRadStart = Mathf.Lerp(goldenZoneDisc.AngRadiansStart, (currentSpeedLimit - goldenSpeedRange) * Mathf.Deg2Rad, Time.deltaTime * goldenZoneLerpSpeed);
+        goldenZoneDisc.AngRadiansStart = angRadStart;
+        
+        var angRadEnd = Mathf.Lerp(goldenZoneDisc.AngRadiansEnd, (currentSpeedLimit + goldenSpeedRange) * Mathf.Deg2Rad, Time.deltaTime * goldenZoneLerpSpeed);
+        goldenZoneDisc.AngRadiansEnd = angRadEnd;
 
         var percent = currentSpeed / targetSpeedForAllMusicLayers;
 
@@ -134,6 +148,9 @@ public class MusicController : MonoBehaviour
                 Mathf.InverseLerp(0, maxSteeringAngle, Mathf.Abs(currentAngle)) * maxSteeringVolume;
             steering.volume = Mathf.Lerp(steering.volume, steeringTargetVolume, Time.deltaTime * steeringLerpSpeed);
         }
+
+        leftRect.Width = Mathf.InverseLerp(0, -14f, currentAngle) * 5f;
+        rightRect.Width = Mathf.InverseLerp(0, 14f, currentAngle) * 5f;
 
         if (enableGoldenSpeed)
         {

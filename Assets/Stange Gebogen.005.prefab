@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01ecaacceee3146cea4be29c7399ed75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetVelocityAfter: 50
   tooLate: 0
   vc: {fileID: 0}
   carSpeed: 0
@@ -130,7 +131,7 @@ MonoBehaviour:
   timeStayedInTargetVelocity: 0
   calcWindow: 200
   targetVelocity: 50
-  targetVelcoityWindow: 5
+  targetVelcoityWindow: 10
   minTimeToStayInTargetVelocity: 4
   distanceToSwitchToGreen: 60
   state: 0

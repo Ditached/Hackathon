@@ -149,8 +149,8 @@ public class MusicController : MonoBehaviour
             steering.volume = Mathf.Lerp(steering.volume, steeringTargetVolume, Time.deltaTime * steeringLerpSpeed);
         }
 
-        leftRect.Width = Mathf.InverseLerp(0, -14f, currentAngle) * 5f;
-        rightRect.Width = Mathf.InverseLerp(0, 14f, currentAngle) * 5f;
+        leftRect.Width = Mathf.InverseLerp(0, -maxSteeringAngle, currentAngle) * 5f;
+        rightRect.Width = Mathf.InverseLerp(0, maxSteeringAngle, currentAngle) * 5f;
 
         if (enableGoldenSpeed)
         {

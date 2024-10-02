@@ -13,6 +13,7 @@ public enum AmpelState
 
 public class Ampel : MonoBehaviour
 {
+    public float targetVelocityAfter = 50f;
     [ReadOnly]
     public bool tooLate;
     public VehicleController vc;
@@ -34,7 +35,8 @@ public class Ampel : MonoBehaviour
     public int state = 0;
     
     public AmpelState ampelColor => (AmpelState) state;
-    
+    public bool TrackingActive;
+
     public List<Material> activeMaterials;
     public List<Material> inactiveMaterials;
 
@@ -77,7 +79,7 @@ public class Ampel : MonoBehaviour
         var speed = vc.Speed * 3.6f;
         carSpeed = speed;
 
-        if (distance <= calcWindow)
+        if (TrackingActive)
         {
             if (!enterFlag)
             {
@@ -94,23 +96,6 @@ public class Ampel : MonoBehaviour
                 if (timeStayedInTargetVelocity > 0f)
                 {
                     timeStayedInTargetVelocity -= Time.deltaTime * 3f;
-                }
-            }
-            
-            if (distance <= distanceToSwitchToGreen && switchFlag == false)
-            {
-                switchFlag = true;
-                StopAllCoroutines();
-
-                if (timeStayedInTargetVelocity >= minTimeToStayInTargetVelocity)
-                {
-                    StartCoroutine(SwitchToGreen());
-                }
-                else
-                {
-                    FindObjectOfType<MusicController>().currentSpeedLimit = 0;
-                    tooLate = true;
-                    StartCoroutine(SwitchToGreenTooLate());
                 }
             }
         }
@@ -133,6 +118,11 @@ public class Ampel : MonoBehaviour
     {
         state = 0;
         ApplyMaterial();
+
+        if (TrackingActive)
+        {
+            FindObjectOfType<MusicController>().currentSpeedLimit = targetVelocityAfter;
+        }
     }
     
     public void SetToRed()
@@ -165,5 +155,32 @@ public class Ampel : MonoBehaviour
         }
         
         meshRenderer.sharedMaterials = materials;
+    }
+
+    public void MakeDecision()
+    {
+        if (switchFlag == false)
+        {
+            switchFlag = true;
+            StopAllCoroutines();
+
+            if (timeStayedInTargetVelocity >= minTimeToStayInTargetVelocity)
+            {
+                StartCoroutine(SwitchToGreen());
+            }
+            else
+            {
+                FindObjectOfType<MusicController>().currentSpeedLimit = 0;
+                tooLate = true;
+                StartCoroutine(SwitchToGreenTooLate());
+            }
+        }
+    }
+
+    public void AmpelOver()
+    {
+        TrackingActive = false;
+        FindObjectOfType<MusicController>().currentSpeedLimit = targetVelocityAfter;
+        SetToRed();
     }
 }

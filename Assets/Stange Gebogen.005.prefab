@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01ecaacceee3146cea4be29c7399ed75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tooLate: 0
   vc: {fileID: 0}
   carSpeed: 0
   distanceToCar: 0
@@ -133,6 +134,7 @@ MonoBehaviour:
   minTimeToStayInTargetVelocity: 4
   distanceToSwitchToGreen: 60
   state: 0
+  TrackingActive: 0
   activeMaterials:
   - {fileID: 2100000, guid: 0fdab99c8db5f44e99fad69e04d03baa, type: 2}
   - {fileID: 2100000, guid: 24715acc7001f4dcaaf8913701edc409, type: 2}

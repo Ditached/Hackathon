@@ -48,7 +48,9 @@ public class MusicController : MonoBehaviour
     public float acclLerpSpeed = 2f;
 
 
-    [Title("Too fast / too slow")] public float currentSpeedLimit = 50f;
+    [Title("Too fast / too slow")] 
+    public bool enablePitch = false;
+    public float currentSpeedLimit = 50f;
     [ReadOnly] public float speedOverLimit = 0f;
     [ReadOnly] public float speedUnderLimit = 0f;
     public float minSpeedOverGreyArea = 5f;
@@ -58,6 +60,15 @@ public class MusicController : MonoBehaviour
     public TMP_Text speedLimitText;
     public float maxTooFastVolume = 0.7f;
     public float maxTooSlowVolume = 0.7f;
+
+    public bool enableGoldenSpeed = false;
+    public AudioSource goldenSpeed;
+    public AudioSource goldenSpeed2;
+    public float maxGoldenSpeedVolume = 0.7f;
+    public float goldenSpeedRange = 5f;
+    public float goldenSpeedSoundLerpSpeed = 2f;
+    
+    
     public AudioMixer audioMixer;
     public float maxPitch = 20f;
     public float minSpeedForTooSlowToKickIn = 20f;
@@ -124,6 +135,23 @@ public class MusicController : MonoBehaviour
             steering.volume = Mathf.Lerp(steering.volume, steeringTargetVolume, Time.deltaTime * steeringLerpSpeed);
         }
 
+        if (enableGoldenSpeed)
+        {
+            var diff = Mathf.Abs(currentSpeed - currentSpeedLimit);
+            
+            if(diff < goldenSpeedRange)
+            {
+                goldenSpeed.volume = Mathf.Lerp(goldenSpeed.volume, maxGoldenSpeedVolume, Time.deltaTime * goldenSpeedSoundLerpSpeed);
+                goldenSpeed2.volume = Mathf.Lerp(goldenSpeed2.volume, maxGoldenSpeedVolume, Time.deltaTime * goldenSpeedSoundLerpSpeed);
+            }
+            else
+            {
+                goldenSpeed.volume = Mathf.Lerp(goldenSpeed.volume, 0f, Time.deltaTime * goldenSpeedSoundLerpSpeed);
+                goldenSpeed2.volume = Mathf.Lerp(goldenSpeed2.volume, 0f, Time.deltaTime * goldenSpeedSoundLerpSpeed);
+            }
+            
+        }
+
         
         speedOverLimit = Mathf.Max(0, currentSpeed - minSpeedOverGreyArea - currentSpeedLimit);
         goingTooFast.volume = Mathf.InverseLerp(0, maxOverSpeed, speedOverLimit) * maxTooFastVolume;
@@ -142,7 +170,10 @@ public class MusicController : MonoBehaviour
 
 
         //Setting pith
-        audioMixer.SetFloat("Pitch", 1f + Mathf.InverseLerp(0, maxOverSpeed, speedOverLimit) * maxPitch);
+        if (enablePitch)
+        {
+            audioMixer.SetFloat("Pitch", 1f + Mathf.InverseLerp(0, maxOverSpeed, speedOverLimit) * maxPitch);
+        }
 
         localAcceleration = vehicleController.LocalAcceleration;
 

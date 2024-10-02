@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8980483506989700466
+--- !u!114 &-9082872940069999916
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12,7 +12,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
   m_Name: AudioPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: c7e971dd493524c6c9e56fd631ff19b1, type: 3}
+  m_Clip: {fileID: 8300000, guid: ec0f3ff38d2e54dd99fbf3b1e0072ce5, type: 3}
+  m_Loop: 0
+  m_bufferingTime: 0.1
+  m_ClipProperties:
+    volume: 1
+--- !u!114 &-8398630389928394337
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
+  m_Name: AudioPlayableAsset
+  m_EditorClassIdentifier: 
+  m_Clip: {fileID: 8300000, guid: ec0f3ff38d2e54dd99fbf3b1e0072ce5, type: 3}
+  m_Loop: 0
+  m_bufferingTime: 0.1
+  m_ClipProperties:
+    volume: 1
+--- !u!114 &-8397651332187249246
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
+  m_Name: AudioPlayableAsset
+  m_EditorClassIdentifier: 
+  m_Clip: {fileID: 8300000, guid: c21207dc6032e42c78bec5ff19324de5, type: 3}
   m_Loop: 0
   m_bufferingTime: 0.1
   m_ClipProperties:
@@ -44,6 +78,23 @@ MonoBehaviour:
     volume: 1
     stereoPan: 0
     spatialBlend: 0
+--- !u!114 &-8072430860849636325
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
+  m_Name: AudioPlayableAsset
+  m_EditorClassIdentifier: 
+  m_Clip: {fileID: 8300000, guid: 4defe126006a04d2fbf81d40604e213d, type: 3}
+  m_Loop: 0
+  m_bufferingTime: 0.1
+  m_ClipProperties:
+    volume: 1
 --- !u!114 &-7836750526458376932
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -68,8 +119,8 @@ MonoBehaviour:
   - m_Version: 1
     m_Start: 0
     m_ClipIn: 0
-    m_Asset: {fileID: 339878138655462958}
-    m_Duration: 18.285714285714285
+    m_Asset: {fileID: 3785438508337254939}
+    m_Duration: 146.28573696145125
     m_TimeScale: 1
     m_ParentTrack: {fileID: -7836750526458376932}
     m_EaseInDuration: 0
@@ -133,13 +184,30 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: cruise mode
+    m_DisplayName: Synthwave 8-NW_NDRE_90_kit_neonhighway_lead_F#maj
   m_Markers:
     m_Objects: []
   m_TrackProperties:
     volume: 1
     stereoPan: 0
     spatialBlend: 0
+--- !u!114 &-7455672895072908877
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
+  m_Name: AudioPlayableAsset
+  m_EditorClassIdentifier: 
+  m_Clip: {fileID: 8300000, guid: ec0f3ff38d2e54dd99fbf3b1e0072ce5, type: 3}
+  m_Loop: 0
+  m_bufferingTime: 0.1
+  m_ClipProperties:
+    volume: 1
 --- !u!114 &-6163349024637493140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -164,8 +232,8 @@ MonoBehaviour:
   - m_Version: 1
     m_Start: 0
     m_ClipIn: 0
-    m_Asset: {fileID: 3968063150031403340}
-    m_Duration: 18.285714285714285
+    m_Asset: {fileID: -9082872940069999916}
+    m_Duration: 146.28573696145125
     m_TimeScale: 1
     m_ParentTrack: {fileID: -6163349024637493140}
     m_EaseInDuration: 0
@@ -229,7 +297,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Synthwave-Blinker
+    m_DisplayName: Synthwave 12-Hammer Dulcimer
   m_Markers:
     m_Objects: []
   m_TrackProperties:
@@ -261,7 +329,7 @@ MonoBehaviour:
     m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: -308589228326479204}
-    m_Duration: 18.285714285714285
+    m_Duration: 146.28573696145125
     m_TimeScale: 1
     m_ParentTrack: {fileID: -5951047567721208460}
     m_EaseInDuration: 0
@@ -332,7 +400,7 @@ MonoBehaviour:
     volume: 1
     stereoPan: 0
     spatialBlend: 0
---- !u!114 &-5185296926773073160
+--- !u!114 &-5235927714753750466
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -344,7 +412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
   m_Name: AudioPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: 36a77199a87b142b7ae27e023850f884, type: 3}
+  m_Clip: {fileID: 8300000, guid: 3a0ed9b196287408ba4d5cfaeb12506d, type: 3}
   m_Loop: 0
   m_bufferingTime: 0.1
   m_ClipProperties:
@@ -373,8 +441,8 @@ MonoBehaviour:
   - m_Version: 1
     m_Start: 0
     m_ClipIn: 0
-    m_Asset: {fileID: -8980483506989700466}
-    m_Duration: 18.285714285714285
+    m_Asset: {fileID: 4632233928318470956}
+    m_Duration: 146.28573696145125
     m_TimeScale: 1
     m_ParentTrack: {fileID: -5151419168893562431}
     m_EaseInDuration: 0
@@ -438,7 +506,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Synthwave 9-NW_NDRE_90_kit_neonhighway_poly_low_F#maj
+    m_DisplayName: Synthwave 9-NW_NDRE_90_kit_neonhighway_pad_F#maj
   m_Markers:
     m_Objects: []
   m_TrackProperties:
@@ -460,7 +528,7 @@ MonoBehaviour:
   m_Version: 3
   m_AnimClip: {fileID: 0}
   m_Locked: 0
-  m_Muted: 0
+  m_Muted: 1
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
   m_Parent: {fileID: 11400000}
@@ -469,8 +537,8 @@ MonoBehaviour:
   - m_Version: 1
     m_Start: 0
     m_ClipIn: 0
-    m_Asset: {fileID: -359442366232371386}
-    m_Duration: 18.285714285714285
+    m_Asset: {fileID: -7455672895072908877}
+    m_Duration: 146.28573696145125
     m_TimeScale: 1
     m_ParentTrack: {fileID: -4195303554205286229}
     m_EaseInDuration: 0
@@ -534,47 +602,13 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Synthwave 12-NW_NDRE_90_kit_neonhighway_poly_high_F#maj
+    m_DisplayName: Synthwave 12-Hammer Dulcimer
   m_Markers:
     m_Objects: []
   m_TrackProperties:
     volume: 1
     stereoPan: 0
     spatialBlend: 0
---- !u!114 &-3903361980276531212
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
-  m_Name: AudioPlayableAsset
-  m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: 87f5d1f84c13c434a83f08939a502aa8, type: 3}
-  m_Loop: 0
-  m_bufferingTime: 0.1
-  m_ClipProperties:
-    volume: 1
---- !u!114 &-3597669811908757741
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
-  m_Name: AudioPlayableAsset
-  m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: def7fa774691847c5be1620f0a00086e, type: 3}
-  m_Loop: 0
-  m_bufferingTime: 0.1
-  m_ClipProperties:
-    volume: 1
 --- !u!114 &-3353246633237307916
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -599,8 +633,8 @@ MonoBehaviour:
   - m_Version: 1
     m_Start: 0
     m_ClipIn: 0
-    m_Asset: {fileID: 3246486925646273972}
-    m_Duration: 18.285714285714285
+    m_Asset: {fileID: -8397651332187249246}
+    m_Duration: 146.28573696145125
     m_TimeScale: 1
     m_ParentTrack: {fileID: -3353246633237307916}
     m_EaseInDuration: 0
@@ -664,7 +698,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Synthwave 7-NW_NDRE_90_kit_neonhighway_arp_F#maj
+    m_DisplayName: Synthwave 7-NW_NDRE_90_kit_neonhighway_bass_F#maj
   m_Markers:
     m_Objects: []
   m_TrackProperties:
@@ -695,8 +729,8 @@ MonoBehaviour:
   - m_Version: 1
     m_Start: 0
     m_ClipIn: 0
-    m_Asset: {fileID: -3903361980276531212}
-    m_Duration: 18.285714285714285
+    m_Asset: {fileID: -596610070327607839}
+    m_Duration: 146.28573696145125
     m_TimeScale: 1
     m_ParentTrack: {fileID: -970419029088094263}
     m_EaseInDuration: 0
@@ -760,7 +794,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Synthwave 10-NW_NDRE_90_kit_neonhighway_lead_F#maj
+    m_DisplayName: Synthwave 10-NW_NDRE_90_kit_neonhighway_poly_high_F#maj
   m_Markers:
     m_Objects: []
   m_TrackProperties:
@@ -791,8 +825,8 @@ MonoBehaviour:
   - m_Version: 1
     m_Start: 0
     m_ClipIn: 0
-    m_Asset: {fileID: 8055244882548022698}
-    m_Duration: 18.285714285714285
+    m_Asset: {fileID: -8072430860849636325}
+    m_Duration: 146.28573696145125
     m_TimeScale: 1
     m_ParentTrack: {fileID: -707508040782726187}
     m_EaseInDuration: 0
@@ -863,7 +897,7 @@ MonoBehaviour:
     volume: 1
     stereoPan: 0
     spatialBlend: 0
---- !u!114 &-359442366232371386
+--- !u!114 &-596610070327607839
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -875,7 +909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
   m_Name: AudioPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: a09a46010a5ea499ca8e9f5dffccc90b, type: 3}
+  m_Clip: {fileID: 8300000, guid: 25286454fa6ba4c969ec7a0f656a9210, type: 3}
   m_Loop: 0
   m_bufferingTime: 0.1
   m_ClipProperties:
@@ -893,7 +927,7 @@ MonoBehaviour:
   m_Name: AudioPlayableAsset
   m_EditorClassIdentifier: 
   m_Clip: {fileID: 8300000, guid: 6ac3d94f098c042158aa7d5415785adc, type: 3}
-  m_Loop: 0
+  m_Loop: 1
   m_bufferingTime: 0.1
   m_ClipProperties:
     volume: 1
@@ -925,13 +959,14 @@ MonoBehaviour:
   - {fileID: 6524645961103194736}
   - {fileID: -7836750526458376932}
   - {fileID: -6163349024637493140}
+  - {fileID: 4503752458098238472}
   m_FixedDuration: 0
   m_EditorSettings:
     m_Framerate: 60
     m_ScenePreview: 1
   m_DurationMode: 0
   m_MarkerTrack: {fileID: 0}
---- !u!114 &339878138655462958
+--- !u!114 &569082552234386686
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -943,7 +978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
   m_Name: AudioPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: 87f5d1f84c13c434a83f08939a502aa8, type: 3}
+  m_Clip: {fileID: 8300000, guid: 81a587edd6f2742e486d015220f955fb, type: 3}
   m_Loop: 0
   m_bufferingTime: 0.1
   m_ClipProperties:
@@ -972,8 +1007,8 @@ MonoBehaviour:
   - m_Version: 1
     m_Start: 0
     m_ClipIn: 0
-    m_Asset: {fileID: 3897661889746907956}
-    m_Duration: 18.285714285714285
+    m_Asset: {fileID: 569082552234386686}
+    m_Duration: 146.28573696145125
     m_TimeScale: 1
     m_ParentTrack: {fileID: 1001639351290313349}
     m_EaseInDuration: 0
@@ -1068,8 +1103,8 @@ MonoBehaviour:
   - m_Version: 1
     m_Start: 0
     m_ClipIn: 0
-    m_Asset: {fileID: 4692227276806512057}
-    m_Duration: 18.285714285714285
+    m_Asset: {fileID: -8398630389928394337}
+    m_Duration: 146.28573696145125
     m_TimeScale: 1
     m_ParentTrack: {fileID: 1493220546637780558}
     m_EaseInDuration: 0
@@ -1133,14 +1168,14 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Synthwave-Blinker
+    m_DisplayName: Synthwave 12-Hammer Dulcimer
   m_Markers:
     m_Objects: []
   m_TrackProperties:
     volume: 1
     stereoPan: 0
     spatialBlend: 0
---- !u!114 &3246486925646273972
+--- !u!114 &2026637470426103786
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1152,7 +1187,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
   m_Name: AudioPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: fca3bb887cb56435290738e4e434dfe7, type: 3}
+  m_Clip: {fileID: 8300000, guid: 1b90a54f55d134c33a019836a2605d00, type: 3}
+  m_Loop: 0
+  m_bufferingTime: 0.1
+  m_ClipProperties:
+    volume: 1
+--- !u!114 &2769365059822926337
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
+  m_Name: AudioPlayableAsset
+  m_EditorClassIdentifier: 
+  m_Clip: {fileID: 8300000, guid: 45c5ccce9e54e4b529eab45770a218a7, type: 3}
   m_Loop: 0
   m_bufferingTime: 0.1
   m_ClipProperties:
@@ -1177,14 +1229,58 @@ MonoBehaviour:
   m_Curves: {fileID: 0}
   m_Parent: {fileID: 11400000}
   m_Children: []
+  m_Clips: []
+  m_Markers:
+    m_Objects: []
+  m_TrackProperties:
+    volume: 1
+    stereoPan: 0
+    spatialBlend: 0
+--- !u!114 &3785438508337254939
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
+  m_Name: AudioPlayableAsset
+  m_EditorClassIdentifier: 
+  m_Clip: {fileID: 8300000, guid: 3a0ed9b196287408ba4d5cfaeb12506d, type: 3}
+  m_Loop: 0
+  m_bufferingTime: 0.1
+  m_ClipProperties:
+    volume: 1
+--- !u!114 &4503752458098238472
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b22792c3b570444eb18cb78c2af3a74, type: 3}
+  m_Name: Audio Track (14)
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
   m_Clips:
   - m_Version: 1
     m_Start: 0
     m_ClipIn: 0
-    m_Asset: {fileID: -5185296926773073160}
-    m_Duration: 18.285714285714285
+    m_Asset: {fileID: 2769365059822926337}
+    m_Duration: 146.28573696145125
     m_TimeScale: 1
-    m_ParentTrack: {fileID: 3761235364962358833}
+    m_ParentTrack: {fileID: 4503752458098238472}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: -1
@@ -1246,14 +1342,14 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Synthwave 11-NW_NDRE_90_kit_neonhighway_pad_F#maj
+    m_DisplayName: Synthwave Lenken
   m_Markers:
     m_Objects: []
   m_TrackProperties:
     volume: 1
     stereoPan: 0
     spatialBlend: 0
---- !u!114 &3808436895435029127
+--- !u!114 &4632233928318470956
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1265,58 +1361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
   m_Name: AudioPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: 2bd87c4f5dbdb45cfb9088494ca659b4, type: 3}
-  m_Loop: 0
-  m_bufferingTime: 0.1
-  m_ClipProperties:
-    volume: 1
---- !u!114 &3897661889746907956
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
-  m_Name: AudioPlayableAsset
-  m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: d0bd17b0277ee4b4eba37fb12dca715c, type: 3}
-  m_Loop: 0
-  m_bufferingTime: 0.1
-  m_ClipProperties:
-    volume: 1
---- !u!114 &3968063150031403340
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
-  m_Name: AudioPlayableAsset(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: 9d5431fb0effa4ed6a619e98dfb5195b, type: 3}
-  m_Loop: 0
-  m_bufferingTime: 0.1
-  m_ClipProperties:
-    volume: 1
---- !u!114 &4692227276806512057
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
-  m_Name: AudioPlayableAsset
-  m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: 9d5431fb0effa4ed6a619e98dfb5195b, type: 3}
+  m_Clip: {fileID: 8300000, guid: f228649670e7d4300b1e25c824e85290, type: 3}
   m_Loop: 0
   m_bufferingTime: 0.1
   m_ClipProperties:
@@ -1345,8 +1390,8 @@ MonoBehaviour:
   - m_Version: 1
     m_Start: 0
     m_ClipIn: 0
-    m_Asset: {fileID: 3808436895435029127}
-    m_Duration: 18.285714285714285
+    m_Asset: {fileID: -5235927714753750466}
+    m_Duration: 146.28573696145125
     m_TimeScale: 1
     m_ParentTrack: {fileID: 5719874172190960623}
     m_EaseInDuration: 0
@@ -1410,7 +1455,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Synthwave 8-NW_NDRE_90_kit_neonhighway_bass_F#maj
+    m_DisplayName: Synthwave 8-NW_NDRE_90_kit_neonhighway_lead_F#maj
   m_Markers:
     m_Objects: []
   m_TrackProperties:
@@ -1441,8 +1486,8 @@ MonoBehaviour:
   - m_Version: 1
     m_Start: 0
     m_ClipIn: 0
-    m_Asset: {fileID: -3597669811908757741}
-    m_Duration: 18.285714285714285
+    m_Asset: {fileID: 2026637470426103786}
+    m_Duration: 146.28573696145125
     m_TimeScale: 1
     m_ParentTrack: {fileID: 6524645961103194736}
     m_EaseInDuration: 0
@@ -1513,20 +1558,3 @@ MonoBehaviour:
     volume: 1
     stereoPan: 0
     spatialBlend: 0
---- !u!114 &8055244882548022698
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
-  m_Name: AudioPlayableAsset
-  m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: 3fa3d7a2a4bfc402bac51f1e8a357739, type: 3}
-  m_Loop: 0
-  m_bufferingTime: 0.1
-  m_ClipProperties:
-    volume: 1

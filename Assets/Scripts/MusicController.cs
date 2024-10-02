@@ -74,10 +74,13 @@ public class MusicController : MonoBehaviour
     public InputAction blinkerRightAction;
 
     [Title("Steering")] 
+    public bool enableSteeringSound = false;
     [ReadOnly] public float currentAngle;
     public float maxSteeringAngle = 14f;
     public float maxSteeringVolume = 0.6f;
+    public float steeringLerpSpeed = 2f;
     public AudioSource steering;
+    
 
     private void Awake()
     {
@@ -99,11 +102,14 @@ public class MusicController : MonoBehaviour
             musicLayer.Update(percent);
         }
 
-        
-        currentAngle = vehicleController.steering.angle;
-        steering.volume = Mathf.InverseLerp(0, maxSteeringAngle, Mathf.Abs(currentAngle)) * maxSteeringVolume;
-        
-        
+
+        if (enableSteeringSound)
+        {
+            currentAngle = vehicleController.steering.angle;
+            var steeringTargetVolume =  Mathf.InverseLerp(0, maxSteeringAngle, Mathf.Abs(currentAngle)) * maxSteeringVolume;
+            steering.volume = Mathf.Lerp(steering.volume, steeringTargetVolume, Time.deltaTime * steeringLerpSpeed);
+        }
+
         speedOverLimit = Mathf.Max(0, currentSpeed - minSpeedOverGreyArea - currentSpeedLimit);
         goingTooFast.volume = Mathf.InverseLerp(0, maxOverSpeed, speedOverLimit) * maxTooFastVolume;
         speedLimitText.text = currentSpeedLimit.ToString("F0");

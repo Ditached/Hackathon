@@ -5,7 +5,9 @@ using NWH.Common.Vehicles;
 using NWH.VehiclePhysics2;
 using NWH.VehiclePhysics2.Sound.SoundComponents;
 using Sirenix.OdinInspector;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.InputSystem;
 
 
@@ -32,7 +34,7 @@ public class MusicController : MonoBehaviour
     public VehicleController vehicleController;
 
 
-    public float targetSpeed = 50f;
+    public float targetSpeedForAllMusicLayers = 50f;
     [ReadOnly] public float currentSpeed = 0f;
     
     [Title("Acceleration, Braking")]
@@ -46,6 +48,18 @@ public class MusicController : MonoBehaviour
     [ReadOnly] public Vector3 localAcceleration;
     [ReadOnly] public Vector3 localAccelerationLerped;
     public float acclLerpSpeed = 2f;
+
+
+    [Title("Too fast")] 
+    public float currentSpeedLimit = 50f;
+    [ReadOnly] public float speedOverLimit = 0f;
+    public float minSpeedOverGreyArea = 5f;
+    public AudioSource goingTooFast;
+    public float maxOverSpeed = 20f;
+    public TMP_Text speedLimitText;
+    public float maxTooFastVolume = 0.7f;
+    public AudioMixer audioMixer;
+    public float maxPitch = 20f;
     
      [Title("Blinker")]
     public AudioSource blinkerLeft;
@@ -58,6 +72,12 @@ public class MusicController : MonoBehaviour
     
     public InputAction blinkerLeftAction;
     public InputAction blinkerRightAction;
+
+    [Title("Steering")] 
+    [ReadOnly] public float currentAngle;
+    public float maxSteeringAngle = 14f;
+    public float maxSteeringVolume = 0.6f;
+    public AudioSource steering;
 
     private void Awake()
     {
@@ -72,13 +92,24 @@ public class MusicController : MonoBehaviour
     {
         currentSpeed = vehicleController.Speed * 3.6f;
         
-        var percent = currentSpeed / targetSpeed;
+        var percent = currentSpeed / targetSpeedForAllMusicLayers;
         
         foreach (var musicLayer in musicLayers)
         {
             musicLayer.Update(percent);
         }
 
+        
+        currentAngle = vehicleController.steering.angle;
+        steering.volume = Mathf.InverseLerp(0, maxSteeringAngle, Mathf.Abs(currentAngle)) * maxSteeringVolume;
+        
+        
+        speedOverLimit = Mathf.Max(0, currentSpeed - minSpeedOverGreyArea - currentSpeedLimit);
+        goingTooFast.volume = Mathf.InverseLerp(0, maxOverSpeed, speedOverLimit) * maxTooFastVolume;
+        speedLimitText.text = currentSpeedLimit.ToString("F0");
+        
+        //Setting pith
+        audioMixer.SetFloat("Pitch", 1f + Mathf.InverseLerp(0, maxOverSpeed, speedOverLimit) * maxPitch);
    
         localAcceleration = vehicleController.LocalAcceleration;
         

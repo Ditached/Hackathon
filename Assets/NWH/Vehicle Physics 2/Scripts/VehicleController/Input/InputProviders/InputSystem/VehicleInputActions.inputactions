@@ -709,6 +709,17 @@
                     "isPartOfComposite": false
                 },
                 {
+                    "name": "",
+                    "id": "0b3b6aa1-76a4-4cd3-82be-02ca07eae852",
+                    "path": "<HID::Logitech G29 Driving Force Racing Wheel>/stick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Steering",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
                     "name": "Keyboard",
                     "id": "866afad4-aa6f-444a-8122-260b6292b1d2",
                     "path": "1DAxis",
@@ -775,33 +786,11 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "Gamepad",
-                    "id": "405ba6f9-74dd-4b74-8687-7dda1bc905d3",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Throttle",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "positive",
-                    "id": "7d163169-2e04-49bb-8dad-3fa803f4201e",
-                    "path": "<Gamepad>/rightTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Throttle",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "",
-                    "id": "fd5d1dbc-db7f-49dd-b4c6-04989991fbd1",
-                    "path": "<HID::HJC PS4 GAMEPAD>/button2",
+                    "id": "e713d32c-fda0-4adb-b643-89e4235fe2d2",
+                    "path": "<HID::Logitech G29 Driving Force Racing Wheel>/z",
                     "interactions": "",
-                    "processors": "",
+                    "processors": "Normalize(min=-1,max=1,zero=1),Invert",
                     "groups": "",
                     "action": "Throttle",
                     "isComposite": false,

@@ -814,7 +814,7 @@ namespace NWH.VehiclePhysics2.Input
                     ""id"": ""e713d32c-fda0-4adb-b643-89e4235fe2d2"",
                     ""path"": ""<HID::Logitech G29 Driving Force Racing Wheel>/z"",
                     ""interactions"": """",
-                    ""processors"": ""Normalize(min=-1,max=1,zero=1),Invert"",
+                    ""processors"": ""Invert,Normalize(min=-1,max=1,zero=-1)"",
                     ""groups"": """",
                     ""action"": ""Throttle"",
                     ""isComposite"": false,
